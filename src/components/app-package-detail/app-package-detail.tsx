@@ -27,8 +27,8 @@ export class AppPackageDetail {
         </ion-header>
 
         <ion-content class="ion-padding">
-          <ion-grid slot="fixed" style={{ width: 'calc(100% - 50px)', marginLeft: '25px', marginRight: '25px' }}>
-            <ion-row>
+          <ion-grid slot="fixed" style={{ width: '100%', backgroundColor: 'white' }}>
+            <ion-row style={{ marginLeft: '25px', marginRight: '25px' }}>
               <ion-col>
                 <ion-label>
                   <h1>{packageInfo.company}</h1>
@@ -38,7 +38,7 @@ export class AppPackageDetail {
                 <ion-note color={packageInfo.expectedDeliveryDate === 'Delayed' ? 'danger' : 'primary'}>{packageInfo.expectedDeliveryDate}</ion-note>
               </ion-col>
             </ion-row>
-            <ion-row>
+            <ion-row style={{ marginLeft: '25px', marginRight: '25px' }}>
               <ion-col>
                 <ion-note color="medium">{packageInfo.trackingNumber}</ion-note>
               </ion-col>
