@@ -19,7 +19,7 @@ export class AppPackageDetail {
             </ion-buttons>
             <ion-title>Package Detail</ion-title>
             <ion-buttons slot="end">
-              <ion-button>
+              <ion-button href="/map">
                 <ion-icon slot="icon-only" name="map"></ion-icon>
               </ion-button>
             </ion-buttons>
