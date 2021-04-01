@@ -1,6 +1,6 @@
 {
-  "name": "parcel-tracker",
-  "short_name": "parcel-tracker",
+  "name": "Parcel Tracker",
+  "short_name": "ParcelTracker",
   "start_url": "/",
   "display": "standalone",
   "icons": [{
