@@ -19,7 +19,7 @@ export class AppHome {
               <ion-button>
                 <ion-icon slot="icon-only" name="funnel"></ion-icon>
               </ion-button>
-              <ion-button>
+              <ion-button href="/add">
                 <ion-icon slot="icon-only" name="add"></ion-icon>
               </ion-button>
             </ion-buttons>
@@ -41,7 +41,7 @@ export class AppHome {
                 { company: 'FedEx', currentLocation: 'Calgary, AB', expectedDeliveryDate: 'Delayed', trackingNumber: '3456789013' },
                 { company: 'UPS', currentLocation: 'Toronto, ON', expectedDeliveryDate: 'Delayed', trackingNumber: '2345678901' },
               ].map(packageInfo => (
-                <ion-item button href="/add">
+                <ion-item button href="/detail">
                   <ion-grid>
                     <ion-row>
                       <ion-col>
