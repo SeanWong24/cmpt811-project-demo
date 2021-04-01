@@ -12,6 +12,8 @@ export namespace Components {
     }
     interface AppCalendar {
     }
+    interface AppFilter {
+    }
     interface AppHome {
     }
     interface AppMap {
@@ -39,6 +41,12 @@ declare global {
     var HTMLAppCalendarElement: {
         prototype: HTMLAppCalendarElement;
         new (): HTMLAppCalendarElement;
+    };
+    interface HTMLAppFilterElement extends Components.AppFilter, HTMLStencilElement {
+    }
+    var HTMLAppFilterElement: {
+        prototype: HTMLAppFilterElement;
+        new (): HTMLAppFilterElement;
     };
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
     }
@@ -68,6 +76,7 @@ declare global {
         "app-add-package": HTMLAppAddPackageElement;
         "app-agenda": HTMLAppAgendaElement;
         "app-calendar": HTMLAppCalendarElement;
+        "app-filter": HTMLAppFilterElement;
         "app-home": HTMLAppHomeElement;
         "app-map": HTMLAppMapElement;
         "app-package-detail": HTMLAppPackageDetailElement;
@@ -81,6 +90,8 @@ declare namespace LocalJSX {
     }
     interface AppCalendar {
     }
+    interface AppFilter {
+    }
     interface AppHome {
     }
     interface AppMap {
@@ -93,6 +104,7 @@ declare namespace LocalJSX {
         "app-add-package": AppAddPackage;
         "app-agenda": AppAgenda;
         "app-calendar": AppCalendar;
+        "app-filter": AppFilter;
         "app-home": AppHome;
         "app-map": AppMap;
         "app-package-detail": AppPackageDetail;
@@ -106,6 +118,7 @@ declare module "@stencil/core" {
             "app-add-package": LocalJSX.AppAddPackage & JSXBase.HTMLAttributes<HTMLAppAddPackageElement>;
             "app-agenda": LocalJSX.AppAgenda & JSXBase.HTMLAttributes<HTMLAppAgendaElement>;
             "app-calendar": LocalJSX.AppCalendar & JSXBase.HTMLAttributes<HTMLAppCalendarElement>;
+            "app-filter": LocalJSX.AppFilter & JSXBase.HTMLAttributes<HTMLAppFilterElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-map": LocalJSX.AppMap & JSXBase.HTMLAttributes<HTMLAppMapElement>;
             "app-package-detail": LocalJSX.AppPackageDetail & JSXBase.HTMLAttributes<HTMLAppPackageDetailElement>;

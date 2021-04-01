@@ -1,3 +1,4 @@
+import { popoverController } from '@ionic/core';
 import { Component, h, Host } from '@stencil/core';
 
 @Component({
@@ -16,7 +17,14 @@ export class AppHome {
               <ion-button href="/calendar">
                 <ion-icon slot="icon-only" name="calendar"></ion-icon>
               </ion-button>
-              <ion-button>
+              <ion-button onClick={async (event) => {
+                const popover = await popoverController.create({
+                  component: 'app-filter',
+                  event,
+                  translucent: true
+                });
+                await popover.present();
+              }}>
                 <ion-icon slot="icon-only" name="funnel"></ion-icon>
               </ion-button>
               <ion-button href="/add">
