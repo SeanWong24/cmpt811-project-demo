@@ -8,6 +8,8 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppAddPackage {
     }
+    interface AppCalendar {
+    }
     interface AppHome {
     }
     interface AppMap {
@@ -23,6 +25,12 @@ declare global {
     var HTMLAppAddPackageElement: {
         prototype: HTMLAppAddPackageElement;
         new (): HTMLAppAddPackageElement;
+    };
+    interface HTMLAppCalendarElement extends Components.AppCalendar, HTMLStencilElement {
+    }
+    var HTMLAppCalendarElement: {
+        prototype: HTMLAppCalendarElement;
+        new (): HTMLAppCalendarElement;
     };
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
     }
@@ -50,6 +58,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "app-add-package": HTMLAppAddPackageElement;
+        "app-calendar": HTMLAppCalendarElement;
         "app-home": HTMLAppHomeElement;
         "app-map": HTMLAppMapElement;
         "app-package-detail": HTMLAppPackageDetailElement;
@@ -58,6 +67,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AppAddPackage {
+    }
+    interface AppCalendar {
     }
     interface AppHome {
     }
@@ -69,6 +80,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "app-add-package": AppAddPackage;
+        "app-calendar": AppCalendar;
         "app-home": AppHome;
         "app-map": AppMap;
         "app-package-detail": AppPackageDetail;
@@ -80,6 +92,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-add-package": LocalJSX.AppAddPackage & JSXBase.HTMLAttributes<HTMLAppAddPackageElement>;
+            "app-calendar": LocalJSX.AppCalendar & JSXBase.HTMLAttributes<HTMLAppCalendarElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-map": LocalJSX.AppMap & JSXBase.HTMLAttributes<HTMLAppMapElement>;
             "app-package-detail": LocalJSX.AppPackageDetail & JSXBase.HTMLAttributes<HTMLAppPackageDetailElement>;

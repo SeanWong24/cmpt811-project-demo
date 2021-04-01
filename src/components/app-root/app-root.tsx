@@ -13,6 +13,7 @@ export class AppRoot {
           <ion-route url="/add" component="app-add-package"></ion-route>
           <ion-route url="/detail" component="app-package-detail"></ion-route>
           <ion-route url="/map" component="app-map"></ion-route>
+          <ion-route url="/calendar" component="app-calendar"></ion-route>
         </ion-router>
         <ion-nav />
       </ion-app>

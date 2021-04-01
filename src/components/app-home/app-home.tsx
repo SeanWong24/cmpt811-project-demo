@@ -13,7 +13,7 @@ export class AppHome {
           <ion-toolbar color="primary">
             <ion-title>My Packages</ion-title>
             <ion-buttons slot="end">
-              <ion-button>
+              <ion-button href="/calendar">
                 <ion-icon slot="icon-only" name="calendar"></ion-icon>
               </ion-button>
               <ion-button>
