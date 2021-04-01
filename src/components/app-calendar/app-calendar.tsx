@@ -17,7 +17,7 @@ export class AppCalendar {
             </ion-buttons>
             <ion-title>Calender</ion-title>
             <ion-buttons slot="end">
-              <ion-button href="/map">
+              <ion-button href="/agenda">
                 <ion-icon slot="icon-only" name="list"></ion-icon>
               </ion-button>
             </ion-buttons>
@@ -25,7 +25,9 @@ export class AppCalendar {
         </ion-header>
 
         <ion-content class="ion-padding">
-          <ion-img src="/assets/calendar.png"></ion-img>
+          <ion-img src="/assets/calendar.png" onClick={() => {
+            document.querySelector('ion-router').push('/agenda');
+          }}></ion-img>
         </ion-content>
       </Host>
     );

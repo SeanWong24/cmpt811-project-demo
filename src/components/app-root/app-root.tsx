@@ -14,6 +14,7 @@ export class AppRoot {
           <ion-route url="/detail" component="app-package-detail"></ion-route>
           <ion-route url="/map" component="app-map"></ion-route>
           <ion-route url="/calendar" component="app-calendar"></ion-route>
+          <ion-route url="/agenda" component="app-agenda"></ion-route>
         </ion-router>
         <ion-nav />
       </ion-app>

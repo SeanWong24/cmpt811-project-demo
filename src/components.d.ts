@@ -8,6 +8,8 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface AppAddPackage {
     }
+    interface AppAgenda {
+    }
     interface AppCalendar {
     }
     interface AppHome {
@@ -25,6 +27,12 @@ declare global {
     var HTMLAppAddPackageElement: {
         prototype: HTMLAppAddPackageElement;
         new (): HTMLAppAddPackageElement;
+    };
+    interface HTMLAppAgendaElement extends Components.AppAgenda, HTMLStencilElement {
+    }
+    var HTMLAppAgendaElement: {
+        prototype: HTMLAppAgendaElement;
+        new (): HTMLAppAgendaElement;
     };
     interface HTMLAppCalendarElement extends Components.AppCalendar, HTMLStencilElement {
     }
@@ -58,6 +66,7 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "app-add-package": HTMLAppAddPackageElement;
+        "app-agenda": HTMLAppAgendaElement;
         "app-calendar": HTMLAppCalendarElement;
         "app-home": HTMLAppHomeElement;
         "app-map": HTMLAppMapElement;
@@ -67,6 +76,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface AppAddPackage {
+    }
+    interface AppAgenda {
     }
     interface AppCalendar {
     }
@@ -80,6 +91,7 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "app-add-package": AppAddPackage;
+        "app-agenda": AppAgenda;
         "app-calendar": AppCalendar;
         "app-home": AppHome;
         "app-map": AppMap;
@@ -92,6 +104,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-add-package": LocalJSX.AppAddPackage & JSXBase.HTMLAttributes<HTMLAppAddPackageElement>;
+            "app-agenda": LocalJSX.AppAgenda & JSXBase.HTMLAttributes<HTMLAppAgendaElement>;
             "app-calendar": LocalJSX.AppCalendar & JSXBase.HTMLAttributes<HTMLAppCalendarElement>;
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-map": LocalJSX.AppMap & JSXBase.HTMLAttributes<HTMLAppMapElement>;
