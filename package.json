@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "@ionic/core": "^5.3.2",
-    "@stencil/core": "^2.0.1"
+    "@stencil/core": "^2.4.0"
   }
 }
